@@ -1,4 +1,5 @@
 const fs = require('fs')
+//add filtering for bot messages and ! messages and ?url messages?
 module.exports = {
 	name: 'allocate',
 	description: `Loads current text for learning.`,

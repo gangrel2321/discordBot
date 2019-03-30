@@ -11,7 +11,7 @@ const fs = require('fs');
 const Discord = require('discord.js');
 
 //const config = require('./config.json')
-const { prefix, token } = require('./config.json');
+const { prefix, tokVal } = require('./config.json');
 
 //create new discord client
 const client = new Discord.Client();
@@ -111,4 +111,4 @@ client.on('message', message => {
 });*/
 
 //log in
-client.login(token);
+client.login(tokVal);
