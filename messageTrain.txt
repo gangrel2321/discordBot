@@ -1,0 +1,10 @@
+!allocate
+!ping
+Pong.
+!allocate
+!ping
+Pong.
+!allocate
+!ping
+Pong.
+!allocate
