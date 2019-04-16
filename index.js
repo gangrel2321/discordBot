@@ -4,6 +4,7 @@ generate pinned messages
 urban dictionary
 burp detector
 
+//if bot gets mentioned (insert random septimus quote)
 */
 
 //require the discord.js module
@@ -86,29 +87,6 @@ client.on('message', message => {
 	}
 });
 
-//if bot gets mentioned (insert random septimus quote)
-/*
-client.on('message', message => {
-    if (!message.content.startsWith(prefix) || message.author.bot) return;
-
-    const args = message.content.slice(prefix.length).split(/ +/);
-    const command = args.shift().toLowerCase();
-	//console.log(message.content)
-    else if (command === 'prune') {
-        const amount = parseInt(args[0]) + 1;
-    
-        if (isNaN(amount)) {
-            return message.reply('that doesn\'t seem to be a valid number.');
-        } else if (amount <= 1 || amount > 100) {
-            return message.reply('you need to input a number between 2 and 100.');
-        }
-        message.channel.bulkDelete(amount, true).catch(err => {
-            console.error(err);
-            message.channel.send('ERROR: Pruning failed.')});        
-    
-        // ...
-    }
-});*/
 
 //log in
 client.login(tokVal);
